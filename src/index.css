@@ -2,27 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
 
-:root{
-    --primary-color:#00d8ff;
-    --secondary-color:#6a00ff;
+:root {
+  --primary-color: #00d8ff;
+  --secondary-color: #6a00ff;
 }
 
-@layer base{
-    *{
-        @apply font-[Kanit,wght=100];
-    }
-    h1{
-        @apply text-3xl font-extrabold;
-    }
-    
-    li{
-        @apply px-4;
-    }
-
-    button{
-        @apply bg-gradient-to-r from-secondary-color to-primary-color py-3 px-7 rounded-xl ;
-    }
+.blue{
+  color: var(--primary-color)
 }
 
+@layer base {
+  * {
+    @apply font-[Kanit,wght=100];
+  }
+  h1 {
+    @apply text-4xl font-extrabold;
+  }
+
+  li {
+    @apply p-4;
+  }
+
+  button {
+    @apply bg-gradient-to-r from-secondary-color to-primary-color py-3 px-7 rounded-xl;
+  }
+}
